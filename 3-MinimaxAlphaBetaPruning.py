@@ -41,7 +41,7 @@ class AIPlayer(Player):
 
         :param input_player_id: The player's ID as an integer.
         """
-        super(AIPlayer, self).__init__(input_player_id, "Prune Juice")
+        super(AIPlayer, self).__init__(input_player_id, "MinimaxAlphaBetaPruning")
 
     def getPlacement(self, current_state: GameState) -> List[tuple]:
         """

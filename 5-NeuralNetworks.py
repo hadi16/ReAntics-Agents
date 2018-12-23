@@ -79,7 +79,7 @@ class AIPlayer(Player):
         :param input_player_id: The player's ID as an integer.
         """
 
-        super(AIPlayer, self).__init__(input_player_id, "Nermal")
+        super(AIPlayer, self).__init__(input_player_id, "NeuralNetworks")
 
         # True allows it to train more, otherwise it will use the hardcoded weights.
         self.TRAINING = False

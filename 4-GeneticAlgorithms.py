@@ -147,7 +147,7 @@ class AIPlayer(Player):
         :param input_player_id: The id to give the new player (int).
         """
 
-        super(AIPlayer, self).__init__(input_player_id, "GeneMaster")
+        super(AIPlayer, self).__init__(input_player_id, "GeneticAlgorithms")
 
         # Constants relating to the amounts of genes.
         self.POPULATION_SIZE = 30

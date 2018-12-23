@@ -24,7 +24,7 @@ class AIPlayer(Player):
 
         :param input_player_id: The ID to give the new player
         """
-        super(AIPlayer, self).__init__(input_player_id, "AnHeuristicAgent")
+        super(AIPlayer, self).__init__(input_player_id, "Heuristic")
 
     def _setup_phase_one_placement(self) -> List[tuple]:
         """

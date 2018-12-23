@@ -242,14 +242,14 @@ class AIPlayer(Player):
         :param input_player_id: The ID to initialize the agent to.
         """
 
-        super(AIPlayer, self).__init__(input_player_id, "Ted")
+        super(AIPlayer, self).__init__(input_player_id, "TDLearning")
 
         # Constants
         self.DISCOUNT_FACTOR = 0.90
         self.MAX_NUM_ANTS = 8  # Prevents the agent from spawning too many ants (similar to Random)
         self.TRAINING = False
         self.EXPLOITATION_PROBABILITY = 0.67 if self.TRAINING else 1.00
-        self.OUTPUT_JSON_FILE = 'state_utilities_hadi20.json'  # The output data file.
+        self.OUTPUT_JSON_FILE = '6-state_utilities.json'  # The output data file.
 
         self.games_played = 0
         self.learning_rate: float = 1.00

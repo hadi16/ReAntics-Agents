@@ -23,7 +23,7 @@ class AIPlayer(Player):
 
         :param input_player_id: The player's ID as an integer.
         """
-        super(AIPlayer, self).__init__(input_player_id, "HadBarAgent")
+        super(AIPlayer, self).__init__(input_player_id, "InformedSearch")
 
     def getPlacement(self, current_state):
         """
