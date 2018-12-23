@@ -32,7 +32,8 @@ reantics_folders = (
 )
 
 for agent in all_agents:
-    os.rename('AI/'+agent, agent)
+    if os.path.exists('AI/'+agent):
+        os.rename('AI/'+agent, agent)
 
 for file in reantics_files:
     if os.path.exists(file):
