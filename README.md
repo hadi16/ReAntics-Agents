@@ -28,7 +28,7 @@ FILES & PURPOSE
 - 4-GeneticAlgorithms.py
     * A genetic algorithms agent (note: must run for multiple iterations to train).
 - 5-NeuralNetworks.py
-    * A neural networks agent (note: after training the agent, hardcoded weights were added).
+    * A neural networks agent (note: the agent was trained and hardcoded weights were added).
 - 6-TDLearning.py
     * A temporal difference learning agent.
 - 6-state_utilities.json
