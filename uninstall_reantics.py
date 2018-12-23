@@ -21,7 +21,8 @@ reantics_files = (
     'Player.py',
     'RedoneWidgets.py',
     'SettingsPane.py',
-    'StatsPane.py'
+    'StatsPane.py',
+    'my-settings.json'
 )
 
 reantics_folders = (
@@ -34,7 +35,8 @@ for agent in all_agents:
     os.rename('AI/'+agent, agent)
 
 for file in reantics_files:
-    os.remove(file)
+    if os.path.exists(file):
+        os.remove(file)
 
 for folder in reantics_folders:
     shutil.rmtree(folder, ignore_errors=True)
