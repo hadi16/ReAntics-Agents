@@ -35,9 +35,9 @@ for agent in all_agents:
     if os.path.exists('AI/'+agent):
         os.rename('AI/'+agent, agent)
 
-for file in reantics_files:
-    if os.path.exists(file):
-        os.remove(file)
+for game_file in reantics_files:
+    if os.path.exists(game_file):
+        os.remove(game_file)
 
 for folder in reantics_folders:
     shutil.rmtree(folder, ignore_errors=True)
