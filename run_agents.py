@@ -5,6 +5,7 @@ from zipfile import ZipFile
 
 try:
     import Game
+    Game.Game()
 except ImportError:
     with ZipFile('ReAntics.zip', 'r') as zip_reference:
         zip_reference.extractall(os.getcwd())
@@ -13,3 +14,4 @@ except ImportError:
         os.rename(agent, 'AI/'+agent)
 
     import Game
+    Game.Game()
