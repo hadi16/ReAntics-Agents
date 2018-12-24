@@ -1,9 +1,10 @@
-from all_agents import all_agents
+from my_agents import MY_AGENTS
 import os
 import shutil
 
 
-reantics_files = (
+# All the files associated with ReAntics.
+REANTICS_FILES = (
     'AIPlayerUtils.py',
     'Ant.py',
     'Building.py',
@@ -22,22 +23,27 @@ reantics_files = (
     'RedoneWidgets.py',
     'SettingsPane.py',
     'StatsPane.py',
-    'my-settings.json'
+    'my-settings.json'  # Created when settings in ReAntics have been modified from defaults.
 )
 
-reantics_folders = (
+# All of the ReAntics folders.
+REANTICS_FOLDERS = (
     'AI/',
     'manual/',
     'Textures/'
 )
 
-for agent in all_agents:
+# First, move all of my agents out of the AI/ folder,
+# so that they aren't deleted by the rmtree command.
+for agent in MY_AGENTS:
     if os.path.exists('AI/'+agent):
         os.rename('AI/'+agent, agent)
 
-for game_file in reantics_files:
+# Delete all the ReAntics files.
+for game_file in REANTICS_FILES:
     if os.path.exists(game_file):
         os.remove(game_file)
 
-for folder in reantics_folders:
+# Delete all the ReAntics folders.
+for folder in REANTICS_FOLDERS:
     shutil.rmtree(folder, ignore_errors=True)

@@ -10,7 +10,6 @@ class Gene:
     """
     Gene
     A gene for the genetic algorithm.
-    NOTE: 24 hour extension was granted by Dr. Nuxoll (Due Saturday at 11:55 PM)!
 
     Authors: Alex Hadi and Andrew Ripple
     Date: November 9, 2018
@@ -133,7 +132,6 @@ class AIPlayer(Player):
     """
     AIPlayer
     The genetic algorithm agent for CS 421.
-    NOTE: 24 hour extension was granted by Dr. Nuxoll (Due Saturday at 11:55 PM)!
 
     Authors: Alex Hadi and Andrew Ripple
     Date: November 9, 2018
