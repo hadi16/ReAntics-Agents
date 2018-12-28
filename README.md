@@ -10,10 +10,10 @@ HOW TO RUN THE AGENTS
     * On Windows: python run_agents.py
     * On macOS: python3 run_agents.py
 
-HOW TO UNINSTALL REANTICS
-- Run the Python script uninstall_reantics.py
-    * On Windows: python uninstall_reantics.py
-    * On macOS: python3 uninstall_reantics.py
+HOW TO REMOVE REANTICS FILES AFTER RUNNING AGENTS
+- Run the Python script remove_reantics_files.py
+    * On Windows: python remove_reantics_files.py
+    * On macOS: python3 remove_reantics_files.py
 
 FILES & PURPOSE
 - ReAntics.zip
